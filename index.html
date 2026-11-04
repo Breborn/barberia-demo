@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA & BARBA • Salón Unisex & Barbería de Autor | Viña del Mar & Valparaíso</title>
+  <meta name="description" content="Salón de belleza y barbería premium en la V Región. Cortes de autor, spa de barba, colorimetría y tratamientos capilares con agendamiento directo a WhatsApp. Maqueta web diseñada por Breborn.cl">
+  
+  <!-- Tipografías de Alta Gama -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Breborn Showcase Banner) -->
+  <aside class="top-bar">
+    <div class="top-bar-content">
+      <span>✨ <strong>Maqueta de Demostración para Salones y Barberías</strong> desarrollada por <a href="https://breborn.cl" target="_blank" rel="noopener">Breborn.cl</a></span>
+      <a href="https://wa.me/56986546546?text=%C2%A1Hola%20Breborn!%20Me%20interesa%20tener%20un%20sitio%20web%20como%20el%20demo%20de%20barber%C3%ADa%20y%20sumarme%20al%20bucle." target="_blank" rel="noopener" class="btn-topbar">
+        ¿Quieres una web así para tu local? Escríbenos ➔
+      </a>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-monogram">A&B</span>
+        <div class="brand-text">
+          <span class="brand-name">AURA & BARBA</span>
+          <span class="brand-sub">SALÓN & BARBERÍA • V REGIÓN</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios & Precios</a></li>
+        <li><a href="#agendamiento">Agendar Cita</a></li>
+        <li><a href="#galeria">Lookbook</a></li>
+        <li><a href="#equipo">Especialistas</a></li>
+        <li><a href="#contacto">Ubicación</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#agendamiento" class="btn btn-gold">
+          <span>📅 Agendar Hora</span>
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Dropdown -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios" class="mobile-link">Servicios & Precios</a>
+    <a href="#agendamiento" class="mobile-link">Agendar Cita</a>
+    <a href="#galeria" class="mobile-link">Lookbook</a>
+    <a href="#equipo" class="mobile-link">Especialistas</a>
+    <a href="#contacto" class="mobile-link">Ubicación</a>
+    <a href="#agendamiento" class="btn btn-gold btn-block mobile-link">📅 Agendar por WhatsApp</a>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="star-icon">★</span>
+        <span>EL ESTÁNDAR DEL BUEN CORTE EN LA V REGIÓN</span>
+      </div>
+      <h1 class="hero-title">
+        Estilo, Precisión &amp; <span class="text-gold">Cuidado de Autor</span>
+      </h1>
+      <p class="hero-subtitle">
+        Cortes modernos, perfilado de barba con toalla caliente, balayage y tratamientos capilares de alta gama. Una experiencia pensada para quienes valoran los detalles.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#agendamiento" class="btn btn-primary-hero">
+          <span class="btn-icon">💬</span>
+          <span>Reservar Cita por WhatsApp</span>
+        </a>
+        <a href="#servicios" class="btn btn-outline-hero">
+          <span>Ver Carta de Servicios</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">4.9 <small>★</small></span>
+          <span class="stat-label">Google Reviews (240+ reseñas)</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">+8.500</span>
+          <span class="stat-label">Clientes atendidos en Viña & Valpo</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Garantía de satisfacción y asesoría</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Strip -->
+  <section class="features-strip">
+    <div class="strip-container">
+      <div class="feature-box">
+        <div class="feature-icon">💈</div>
+        <div class="feature-info">
+          <h4>Barberos & Estilistas Certificados</h4>
+          <p>Técnicas internacionales de fade, tijera y visagismo.</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">🧖</div>
+        <div class="feature-info">
+          <h4>Spa Capilar & Toalla Caliente</h4>
+          <p>Relajo total con aceites esenciales y vapor de ozono.</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">☕</div>
+        <div class="feature-info">
+          <h4>Cortesía de la Casa</h4>
+          <p>Café de especialidad de grano o cerveza helada incluida.</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-info">
+          <h4>Cero Esperas Inútiles</h4>
+          <p>Agendamiento directo a WhatsApp con confirmación al instante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios & Precios (Menu Interactivo) -->
+  <section class="section services-section" id="servicios">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">NUESTRA CARTA</span>
+        <h2 class="section-title">Servicios &amp; <span class="text-gold">Tarifas Transparentes</span></h2>
+        <p class="section-desc">Selecciona tu categoría preferida y agenda directamente con un solo clic.</p>
+        
+        <div class="tabs-control">
+          <button class="tab-btn active" data-tab="barberia">💈 Barbería & Barba</button>
+          <button class="tab-btn" data-tab="salon">💇 Peluquería & Salón</button>
+          <button class="tab-btn" data-tab="color">✨ Color & Mechas</button>
+          <button class="tab-btn" data-tab="spa">🧖 Tratamientos & Spa</button>
+        </div>
+      </div>
+
+      <!-- Tab Content: Barbería -->
+      <div class="tab-content active" id="tab-barberia">
+        <div class="pricing-grid">
+          <div class="service-card featured">
+            <div class="service-badge">MÁS POPULAR</div>
+            <div class="service-header">
+              <h3>Combo Signature: Corte + Barba Spa</h3>
+              <span class="service-price">$22.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Corte degradado o clásico personalizado + ritual de barba completo con toallas calientes al vapor, aceites nutritivos y afeitado a navaja.</p>
+            <ul class="service-perks">
+              <li>✓ Diagnóstico facial y asesoría de estilo</li>
+              <li>✓ Lavado con masaje capilar exfoliante</li>
+              <li>✓ Perfilado de cejas de cortesía</li>
+              <li>✓ Café espresso o cerveza artesanal</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 60 min</span>
+              <button class="btn btn-card-book" data-service="Combo Signature: Corte + Barba Spa ($22.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Corte de Autor (Fade / Clásico)</h3>
+              <span class="service-price">$14.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Degradado milimétrico (Low, Mid, High Fade, Taper o Skin Fade) o corte clásico a tijera. Acabado pulido con texturizador mate.</p>
+            <ul class="service-perks">
+              <li>✓ Asesoría morfológica de rostro</li>
+              <li>✓ Lavado capilar premium</li>
+              <li>✓ Peinado y fijación profesional</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 40 min</span>
+              <button class="btn btn-card-book" data-service="Corte de Autor Fade/Clasico ($14.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Ritual de Barba con Toalla Caliente</h3>
+              <span class="service-price">$12.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Diseño, rebaje y alineación de contornos a navaja descartable. Aplicación de bálsamo hidratante, toalla caliente y tónico refrescante.</p>
+            <ul class="service-perks">
+              <li>✓ Vapor de ozono para abrir poros</li>
+              <li>✓ Aceites esenciales orgánicos</li>
+              <li>✓ Masaje de estimulación facial</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 35 min</span>
+              <button class="btn btn-card-book" data-service="Ritual de Barba Toalla Caliente ($12.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Salón Femenino / Unisex -->
+      <div class="tab-content" id="tab-salon">
+        <div class="pricing-grid">
+          <div class="service-card featured">
+            <div class="service-badge">FAVORITO CLIENTAS</div>
+            <div class="service-header">
+              <h3>Corte de Estilo &amp; Brushing Pro</h3>
+              <span class="service-price">$24.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Asesoría de visagismo, corte estructurado según textura y caída natural de tu cabello, finalizado con lavado y peinado brushing duradero.</p>
+            <ul class="service-perks">
+              <li>✓ Lavado hidratante con masaje craneal</li>
+              <li>✓ Protector térmico de alta gama</li>
+              <li>✓ Ondas o liso pulido a elección</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 60 min</span>
+              <button class="btn btn-card-book" data-service="Corte de Estilo & Brushing Pro ($24.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Lavado, Hidratación &amp; Ondas</h3>
+              <span class="service-price">$16.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Ideal para eventos o fines de semana. Lavado con tratamiento nutritivo instantáneo y peinado con ondas desenfadadas o lisos efecto espejo.</p>
+            <ul class="service-perks">
+              <li>✓ Mascarilla de brillo intenso</li>
+              <li>✓ Fijación flexible sin residuos</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 45 min</span>
+              <button class="btn btn-card-book" data-service="Lavado Hidratacion & Ondas ($16.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Corte de Flequillo / Puntas Saludables</h3>
+              <span class="service-price">$10.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Mantenimiento de largo y saneamiento de puntas abiertas con técnica de microcorte sin perder longitud.</p>
+            <ul class="service-perks">
+              <li>✓ Sellado de cutícula con serum</li>
+              <li>✓ Rápido y preciso</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 25 min</span>
+              <button class="btn btn-card-book" data-service="Corte de Puntas Saludables ($10.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Colorimetría -->
+      <div class="tab-content" id="tab-color">
+        <div class="pricing-grid">
+          <div class="service-card featured">
+            <div class="service-badge">EXPERTOS COLOR</div>
+            <div class="service-header">
+              <h3>Balayage / Babylights Iluminación</h3>
+              <span class="service-price">Desde $65.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Técnica a mano alzada para lograr transiciones suaves y naturales de luz. Incluye decoloración controlada con plex protector y matización tonal.</p>
+            <ul class="service-perks">
+              <li>✓ Diagnóstico capilar con mecha test</li>
+              <li>✓ Baño de luz y matiz personalizado</li>
+              <li>✓ Brushing de peinado final incluido</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 3 a 4 hrs</span>
+              <button class="btn btn-card-book" data-service="Balayage / Babylights Iluminacion ($65.000+)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Color Global &amp; Cobertura Total</h3>
+              <span class="service-price">$38.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Coloración completa con tinturas sin amoníaco que cuidan la fibra capilar, aportando brillo espejo y 100% cobertura de canas.</p>
+            <ul class="service-perks">
+              <li>✓ Pigmentos de larga duración</li>
+              <li>✓ Sellador de color post-lavado</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 90 min</span>
+              <button class="btn btn-card-book" data-service="Color Global & Cobertura Total ($38.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Camuflaje de Canas / Barba (Hombres)</h3>
+              <span class="service-price">$15.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Difuminado sutil y natural de canas en cabello o barba en solo 10 minutos sin efecto casco ni crecimiento marcado.</p>
+            <ul class="service-perks">
+              <li>✓ Resultado 100% natural</li>
+              <li>✓ No daña la piel</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 20 min</span>
+              <button class="btn btn-card-book" data-service="Camuflaje Canas Barba ($15.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Tratamientos & Spa -->
+      <div class="tab-content" id="tab-spa">
+        <div class="pricing-grid">
+          <div class="service-card featured">
+            <div class="service-badge">REGENERACIÓN TOTAL</div>
+            <div class="service-header">
+              <h3>Botox Capilar &amp; Sellado Térmico</h3>
+              <span class="service-price">$32.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Tratamiento intensivo con ácido hialurónico, colágeno y queratina para eliminar el frizz, reparar puntas y devolver el brillo y suavidad extrema.</p>
+            <ul class="service-perks">
+              <li>✓ Rellena la fibra capilar dañada</li>
+              <li>✓ Duración de hasta 2 meses</li>
+              <li>✓ Apto para todo tipo de cabellos</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 90 min</span>
+              <button class="btn btn-card-book" data-service="Botox Capilar & Sellado ($32.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Alisado Pro Orgánico (Libre de Formol)</h3>
+              <span class="service-price">Desde $48.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Liso perfecto, sedoso y con movimiento natural formulado con taninoplastia y aceites amazónicos. Cero humo molesto.</p>
+            <ul class="service-perks">
+              <li>✓ Control 100% del volumen rebelde</li>
+              <li>✓ No altera el color teñido</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 2 hrs 30 min</span>
+              <button class="btn btn-card-book" data-service="Alisado Pro Organico ($48.000+)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Limpieza Facial Profunda Express</h3>
+              <span class="service-price">$18.000 <small>CLP</small></span>
+            </div>
+            <p class="service-desc">Exfoliación con scrub botánico, extracción suave de impurezas con espátula ultrasónica, mascarilla de arcilla negra y masaje relajante.</p>
+            <ul class="service-perks">
+              <li>✓ Descongestiona poros y piel cansada</li>
+              <li>✓ Hidratación con ácido hialurónico</li>
+            </ul>
+            <div class="service-meta">
+              <span>⏱ Duración: 40 min</span>
+              <button class="btn btn-card-book" data-service="Limpieza Facial Profunda Express ($18.000)">
+                Agendar por WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Asistente Interactivo de Agendamiento a WhatsApp -->
+  <section class="section booking-section" id="agendamiento">
+    <div class="section-container">
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <span class="section-kicker text-gold">AGENDAMIENTO FÁCIL</span>
+          <h2>Reserva tu Hora en <span class="text-gold">30 Segundos</span></h2>
+          <p>Elige tu servicio, fecha y horario. Nuestro sistema preparará tu mensaje de WhatsApp listo para enviar y nuestro equipo confirmará tu turno de inmediato.</p>
+          
+          <div class="booking-perks-list">
+            <div class="b-perk">
+              <span class="b-icon">📍</span>
+              <div>
+                <strong>Sucursales Disponibles:</strong>
+                <p>Viña del Mar (1 Poniente con 7 Norte) &amp; Valparaíso (Cerro Alegre)</p>
+              </div>
+            </div>
+            <div class="b-perk">
+              <span class="b-icon">🕒</span>
+              <div>
+                <strong>Horario Continuado:</strong>
+                <p>Lunes a Sábado: 10:00 a 20:30 hrs</p>
+              </div>
+            </div>
+            <div class="b-perk">
+              <span class="b-icon">💳</span>
+              <div>
+                <strong>Medios de Pago:</strong>
+                <p>Efectivo, Débito, Crédito, Transferencia y Mercado Pago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-card">
+          <form id="bookingForm" class="booking-form">
+            <div class="form-header">
+              <h3>Cotizador &amp; Agendador Directo</h3>
+              <span class="badge-online">En línea para agendar</span>
+            </div>
+
+            <!-- Paso 1: Servicio -->
+            <div class="form-group">
+              <label for="bookService">1. Selecciona el Servicio Deseado:</label>
+              <select id="bookService" class="form-control" required>
+                <option value="Combo Signature: Corte + Barba Spa ($22.000)">💈 Combo Signature: Corte + Barba Spa ($22.000)</option>
+                <option value="Corte de Autor Fade / Clásico ($14.000)">✂️ Corte de Autor Fade / Clásico ($14.000)</option>
+                <option value="Ritual de Barba con Toalla Caliente ($12.000)">🧔 Ritual de Barba con Toalla Caliente ($12.000)</option>
+                <option value="Corte de Estilo & Brushing Pro ($24.000)">💇 Corte de Estilo & Brushing Pro ($24.000)</option>
+                <option value="Balayage / Babylights Iluminación ($65.000+)">✨ Balayage / Babylights Iluminación ($65.000+)</option>
+                <option value="Botox Capilar Anti-frizz ($32.000)">🧖 Botox Capilar Anti-frizz ($32.000)</option>
+                <option value="Limpieza Facial Profunda Express ($18.000)">💆 Limpieza Facial Profunda Express ($18.000)</option>
+                <option value="Otro servicio / Asesoría personalizada">🔍 Consulta de Asesoría / Otro servicio</option>
+              </select>
+            </div>
+
+            <!-- Paso 2: Especialista -->
+            <div class="form-group">
+              <label for="bookSpecialist">2. Especialista o Barbero Preferido:</label>
+              <select id="bookSpecialist" class="form-control">
+                <option value="Cualquier especialista disponible">Indiferente (Primer horario libre)</option>
+                <option value="Matías (Master Barber - Especialista Fade & Barbas)">Matías (Master Barber - Especialista Fade & Barbas)</option>
+                <option value="Valentina (Master Stylist - Colorista & Visagismo)">Valentina (Master Stylist - Colorista & Visagismo)</option>
+                <option value="Nicolás (Senior Barber - Cortes Clásicos & Navaja)">Nicolás (Senior Barber - Cortes Clásicos & Navaja)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <!-- Paso 3: Día -->
+              <div class="form-group col-half">
+                <label for="bookDate">3. Día Preferido:</label>
+                <input type="date" id="bookDate" class="form-control" required>
+              </div>
+
+              <!-- Paso 4: Horario -->
+              <div class="form-group col-half">
+                <label for="bookTime">4. Horario Aproximado:</label>
+                <select id="bookTime" class="form-control" required>
+                  <option value="Mañana (10:00 - 13:00)">Mañana (10:00 - 13:00)</option>
+                  <option value="Tarde temprano (13:00 - 17:00)">Tarde (13:00 - 17:00)</option>
+                  <option value="Tarde noche (17:00 - 20:30)" selected>Tarde Noche (17:00 - 20:30)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Paso 5: Sucursal -->
+            <div class="form-group">
+              <label for="bookLocation">5. Sucursal:</label>
+              <select id="bookLocation" class="form-control">
+                <option value="Sucursal Viña del Mar (1 Poniente)">Viña del Mar (Calle 1 Poniente 450)</option>
+                <option value="Sucursal Valparaíso (Cerro Alegre)">Valparaíso (Almirante Montt, Cerro Alegre)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp-submit btn-block">
+              <span class="wa-icon">💬</span>
+              <span>Enviar Reserva a WhatsApp</span>
+            </button>
+            <p class="form-footer-note">🔒 Al hacer clic se abrirá tu aplicación de WhatsApp con los datos completados.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lookbook / Galería de Trabajos -->
+  <section class="section gallery-section" id="galeria">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-kicker">PORTAFOLIO DE TRABAJOS</span>
+        <h2 class="section-title">Galería &amp; <span class="text-gold">Lookbook de Autor</span></h2>
+        <p class="section-desc">Resultados reales logrados día a día en nuestros sillones.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <div class="gallery-img placeholder-1">
+            <span class="gallery-tag">MID FADE + TEXTURA</span>
+          </div>
+          <div class="gallery-info">
+            <h4>Fade Degradado &amp; Cropped</h4>
+            <p>Degradado con afeitadora de láminas y textura superior en puntas.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-img placeholder-2">
+            <span class="gallery-tag">BALAYAGE VAINILLA</span>
+          </div>
+          <div class="gallery-info">
+            <h4>Iluminación Balayage Cálido</h4>
+            <p>Contraste sutil con raíces profundas y puntas luminosas efecto sol.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-img placeholder-3">
+            <span class="gallery-tag">RITUAL DE BARBA</span>
+          </div>
+          <div class="gallery-info">
+            <h4>Perfilado Cuadrado &amp; Bigote</h4>
+            <p>Líneas ultra nítidas con toalla caliente y aceites de sándalo.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-img placeholder-4">
+            <span class="gallery-tag">CORTE SHAGGY MODERNO</span>
+          </div>
+          <div class="gallery-info">
+            <h4>Capas con Movimiento &amp; Flequillo</h4>
+            <p>Estilo libre con navaja japonesa para volumen y dinamismo natural.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo de Especialistas -->
+  <section class="section team-section" id="equipo">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-kicker">TALENTO & PASIÓN</span>
+        <h2 class="section-title">Conoce a tus <span class="text-gold">Especialistas</span></h2>
+        <p class="section-desc">Profesionales dedicados a realzar tu mejor versión.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">💈</div>
+          <h3>Matías Silva</h3>
+          <span class="team-role">Head Barber &amp; Visagista</span>
+          <p>8 años de trayectoria en barberías de autor. Experto en técnicas de fade milimétrico y tratamiento de barbas rebeldes.</p>
+          <span class="team-insta">@matias.barber.v</span>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">💇‍♀️</div>
+          <h3>Valentina Rojas</h3>
+          <span class="team-role">Master Colorist &amp; Hair Stylist</span>
+          <p>Especialista en balayage, corrección de color y tratamientos reconstructivos capilares con productos orgánicos.</p>
+          <span class="team-insta">@valen.colorstudio</span>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">✂️</div>
+          <h3>Nicolás Oyarzún</h3>
+          <span class="team-role">Senior Barber &amp; Estilista Clásico</span>
+          <p>Apasionado de las técnicas clásicas británicas a tijera y afeitado tradicional a navaja libre con espuma tibia.</p>
+          <span class="team-insta">@nico.cutz.valpo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios de Clientes -->
+  <section class="section reviews-section">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-kicker">OPINIONES REALES</span>
+        <h2 class="section-title">Lo que dicen <span class="text-gold">Nuestros Clientes</span></h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"La mejor experiencia de barbería que he tenido en Viña. El ritual de toalla caliente y la cerveza fría mientras te cortan hacen toda la diferencia. Matías un 10."</p>
+          <div class="review-author">
+            <strong>— Camilo Valenzuela</strong>
+            <span>Cliente habitual • Viña del Mar</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Me hice un balayage con Valentina y mi pelo quedó sano, brillante y exactamente con el tono que quería. Además reservar por WhatsApp es comodísimo."</p>
+          <div class="review-author">
+            <strong>— Francisca Morales</strong>
+            <span>Clienta frecuente • Valparaíso</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Puntuales al minuto, local impecable con excelente música y los productos que usan huelen increíble. No cambio este lugar por nada."</p>
+          <div class="review-author">
+            <strong>— Rodrigo Tapia</strong>
+            <span>Cliente habitual • Reñaca</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ubicación & Horarios -->
+  <section class="section contact-section" id="contacto">
+    <div class="section-container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="section-kicker">ENCUÉNTRANOS</span>
+          <h2>Visítanos en Nuestras <span class="text-gold">Sedes</span></h2>
+          <p>Ubicaciones privilegiadas con estacionamiento cercano y fácil acceso en locomoción.</p>
+
+          <div class="location-item">
+            <h4>📍 Sede Viña del Mar</h4>
+            <p>Calle 1 Poniente 450 (entre 5 y 6 Norte), Plan de Viña.</p>
+            <span class="loc-hours">🕒 Lun a Sáb: 10:00 - 20:30 hrs</span>
+          </div>
+
+          <div class="location-item">
+            <h4>📍 Sede Valparaíso</h4>
+            <p>Calle Almirante Montt 380, Cerro Alegre (Paseo Dimalow).</p>
+            <span class="loc-hours">🕒 Mar a Dom: 10:30 - 20:00 hrs</span>
+          </div>
+
+          <div class="contact-actions">
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-secondary">
+              🗺️ Ver en Google Maps
+            </a>
+            <a href="https://wa.me/56986546546?text=%C2%A1Hola!%20Quisiera%20consultar%20por%20citas%20disponibles%20en%20Aura%20%26%20Barba." target="_blank" rel="noopener" class="btn btn-whatsapp-small">
+              💬 Escribir al WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hours-card">
+          <h3>Horarios de Atención</h3>
+          <ul class="hours-list">
+            <li><span>Lunes</span> <strong>10:00 - 20:30 hrs</strong></li>
+            <li><span>Martes</span> <strong>10:00 - 20:30 hrs</strong></li>
+            <li><span>Miércoles</span> <strong>10:00 - 20:30 hrs</strong></li>
+            <li><span>Jueves</span> <strong>10:00 - 20:30 hrs</strong></li>
+            <li><span>Viernes</span> <strong>10:00 - 20:30 hrs</strong></li>
+            <li><span>Sábado</span> <strong>10:00 - 20:30 hrs</strong></li>
+            <li><span>Domingo</span> <strong>Cerrado (Solo citas VIP previas)</strong></li>
+          </ul>
+
+          <div class="open-status" id="openStatus">
+            <span class="status-dot"></span>
+            <span id="statusText">Abierto Ahora • Recibiendo citas por WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breborn Pitch Showcase Footer -->
+  <div class="breborn-showcase-box">
+    <div class="showcase-content">
+      <div class="showcase-text">
+        <h3>🚀 ¿Tienes una Peluquería, Salón o Barbería en Viña o Valparaíso?</h3>
+        <p>En <strong>Breborn</strong> (<a href="https://breborn.cl" target="_blank" rel="noopener">breborn.cl</a>) creamos páginas web modernas como esta en 48 horas, optimizadas para celulares, con agendamiento directo a tu propio WhatsApp y te sumamos a nuestro bucle comercial para atraer clientes continuos.</p>
+      </div>
+      <div class="showcase-cta">
+        <a href="https://wa.me/56986546546?text=%C2%A1Hola%20Breborn!%20Vi%20el%20demo%20de%20barber%C3%ADa%20y%20me%20gustar%C3%ADa%20cotizar%20una%20web%20para%20mi%20local." target="_blank" rel="noopener" class="btn btn-breborn">
+          Cotizar mi Web con Breborn ➔
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">AURA & BARBA</span>
+        <p>Salón Unisex &amp; Barbería de Autor en la V Región.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#agendamiento">Agendamiento</a>
+        <a href="#galeria">Lookbook</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 AURA & BARBA Studio. Sitio de demostración comercial desarrollado por <a href="https://breborn.cl" target="_blank" rel="noopener">Breborn.cl</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA Button -->
+  <a href="https://wa.me/56986546546?text=%C2%A1Hola!%20Quisiera%20agendar%20una%20cita%20en%20el%20sal%C3%B3n." class="floating-wa" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    <span class="floating-wa-icon">💬</span>
+    <span class="floating-wa-label">Agendar por WhatsApp</span>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
