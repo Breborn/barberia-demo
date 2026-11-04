@@ -1,55 +1,62 @@
-# 💈 AURA & BARBA • Salón Unisex & Barbería de Autor
-> **Showcase & Maqueta Comercial Desarrollada por [Breborn.cl](https://breborn.cl)**
+# 🧸 BEAR & ROOTS • Men's Grooming Studio
+> **Showcase Comercial Inspirado en [Bear MenStudio](https://bear-menstudio.cl/) — Desarrollado por [Breborn.cl](https://breborn.cl)**
 
-Sitio web demostrativo de alta gama diseñado para **peluquerías, salones de belleza y barberías** de la V Región (Viña del Mar y Valparaíso). Creado específicamente para mostrar a dueños de negocios locales el potencial de contar con una presencia digital moderna, catálogo de precios interactivo y agendamiento directo a su WhatsApp.
-
----
-
-## 🌟 Características de la Maqueta
-
-- **🎨 Diseño Visual Premium:**
-  - Estética oscura de lujo (Obsidian & Gold Champagne).
-  - Tipografía refinada (`Cinzel` y `Plus Jakarta Sans`).
-  - Totalmente optimizado y pensado para pantallas de celulares (donde navegan el 90% de los clientes).
-
-- **⚡ Cotizador & Agendador Interactivo a WhatsApp:**
-  - El cliente elige:
-    1. Servicio deseado (Corte Fade, Barba Spa, Balayage, Botox Capilar, etc.).
-    2. Barbero o estilista de preferencia.
-    3. Día y rango horario (Mañana, Tarde, Noche).
-    4. Sucursal (Viña del Mar o Valparaíso).
-  - Al presionar **"Enviar Reserva a WhatsApp"**, se abre automáticamente la app de WhatsApp con el mensaje estructurado y listo para confirmar sin que el cliente tenga que tipear nada.
-
-- **📜 Carta de Servicios con Pestañas Dinámicas:**
-  - Separación por rubros: *Barbería & Barba*, *Peluquería & Salón*, *Color & Mechas*, *Tratamientos & Spa*.
-  - Precios transparentes en pesos chilenos (CLP), duración estimada y beneficios incluidos.
-  - Botón individual *"Agendar este servicio"* que autocompleta el formulario.
-
-- **📸 Lookbook & Galería Visual:**
-  - Exhibición de cortes, degradados, balayage y perfilados para inspirar confianza y deseo de compra.
-
-- **👥 Perfil de Especialistas y Barberos:**
-  - Muestra la experiencia, rol y usuario de Instagram de cada miembro del equipo.
-
-- **⭐ Reseñas & Prueba Social:**
-  - Opiniones de clientes locales para derribar objeciones y aumentar la tasa de conversión.
-
-- **🕒 Horarios & Estado de Apertura en Vivo:**
-  - Detecta la hora y día actual para indicar si el local se encuentra abierto o recibiendo turnos para el día siguiente.
-
-- **🚀 Barra Superior & Banner Promocional de Breborn:**
-  - Enlaces directos a [breborn.cl](https://breborn.cl) para que cualquier persona o negocio interesado pueda cotizar su propia web.
+Sitio web demostrativo de alta gama y conversión para **barberías y estudios masculinos de autor** en la V Región (Viña del Mar y Valparaíso). Combina la prestigiosa dirección de arte y propuesta de valor de **Bear MenStudio** con el sistema interactivo de agendamiento directo a WhatsApp de **Breborn.cl**.
 
 ---
 
-## 📱 ¿Cómo usar esta maqueta para vender a clientes?
+## 🔗 Enlace en Vivo (Demo Interactiva)
 
-Cuando contactes a peluquerías o barberías por WhatsApp o presencialmente:
-1. Les dices:  
-   *"Hola [Nombre]! Te preparé una maqueta de muestra para que veas cómo se vería tu salón con su propia web interactiva y agendamiento directo a WhatsApp: https://breborn.github.io/barberia-demo/"*
-2. El cliente entra desde su celular, ve su rubro reflejado con un diseño de primer nivel, prueba el botón de agendamiento y ve el valor inmediato.
-3. Le ofreces adaptarla con su logo, sus fotos, sus servicios y sus precios reales en 48 horas.
+👉 **[https://breborn.github.io/barberia-demo/](https://breborn.github.io/barberia-demo/)**
 
 ---
 
-*Desarrollado con pasión para la V Región por **[Breborn.cl](https://breborn.cl)**.*
+## 🌟 Elementos y Estilo Inspirados en Bear MenStudio
+
+1. **🎨 Identidad Visual & Paleta Cromática:**
+   - Tono ámbar cálido característico (`#f3b164` / `#e59b4c`) contrastado con fondo grafito mate (`#121316` / `#191b21`).
+   - Tipografía editorial `DM Serif Display` en títulos destacados y `#SomosLoQueBuscas`.
+   - Micro-interacciones con glow ámbar sutil.
+
+2. **✂️ Carta de Servicios con Iconografía Directa:**
+   - **Corte de Cabello Signature** ($14.000)
+   - **Barba & Toalla Caliente al Vapor** ($12.000)
+   - **Limpieza e Hidratación Facial** ($18.000)
+   - **Masajes Capilares & Anti-Stress** ($15.000)
+   - **Cuidado de Manos / Manicure Masculina** ($12.000)
+   - **Combo Bear: Corte + Barba + Spa** ($22.000)
+   - Cada tarjeta cuenta con su botón *"Seleccionar ➔"* que pre-selecciona el servicio y hace scroll suave al formulario.
+
+3. **⚡ Cotizador & Agendamiento Express a WhatsApp:**
+   - Selección de servicio, sucursal (Viña del Mar Traslaviña, 10 Norte o Mall Paseo Ross Valparaíso), barbero especialista, fecha y rango horario.
+   - Generación instantánea de mensaje formateado con emojis para enviar por WhatsApp sin teclear nada.
+
+4. **🧴 Tienda de Productos Oficiales:**
+   - Vitrina de productos de grooming premium: American Crew Heavy Hold Pomade, Fiber Texturizer, Sir Fausto Boost Powder y Reuzel Daily Shampoo.
+   - Botón directo de compra por WhatsApp para cada producto.
+
+5. **🏆 Marcas de Confianza & Bear Club 10% OFF:**
+   - Cinta de marcas internacionales (American Crew, Reuzel Rotterdam, Sir Fausto Barber, Barber Mind, Proraso Firenze).
+   - Bloque de fidelización con cupón `BEARCLUB10` para captar clientes desde la primera visita.
+
+6. **📍 Sucursales en la V Región:**
+   - Viña del Mar: Sede Traslaviña 233 y Sede 10 Norte 655 (Casa Matriz).
+   - Valparaíso: Mall Paseo Ross (Piso 3, Av. Argentina).
+   - Enlaces directos a Google Maps para fácil ubicación.
+
+7. **💼 Banner & Propuesta de Valor Breborn.cl:**
+   - Mensaje estratégico para que cualquier dueño de barbería o salón que visite la maqueta entienda el retorno de inversión y cotice su propio sitio con Breborn.
+
+---
+
+## 📱 Guía para el Equipo de Ventas Breborn
+
+Cuando contactes a dueños de peluquerías o barberías de Viña y Valparaíso:
+
+1. **Mensaje de contacto:**
+   > *"¡Hola [Nombre]! Estuve viendo tu local en Viña/Valpo. Te preparé una propuesta visual inspirada en marcas líderes como Bear MenStudio, pero adaptada con agendamiento directo a WhatsApp y catálogo para tus clientes: https://breborn.github.io/barberia-demo/ ¿Te gustaría que la adaptemos con tu logo y servicios esta semana?"*
+2. **Impacto:** El dueño ve un sitio 100% fluido en su smartphone, que resuelve la fricción de agendar citas y le da una imagen corporativa que justifica cobrar tarifas premium.
+
+---
+
+*Desarrollado con dedicación para los emprendedores de la V Región por **[Breborn.cl](https://breborn.cl)**.*
