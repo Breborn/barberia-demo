@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Número de demostración comercial para el showcase de Breborn
-const WHATSAPP_PHONE = '56986546546';
+const WHATSAPP_PHONE = '56956823670';
 
 /**
  * Inicialización y configuración del formulario de agendamiento
