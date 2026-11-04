@@ -1,89 +1,25 @@
 /**
- * AURA & BARBA • DEMO LOGIC
- * High-conversion interactive booking & WhatsApp integration
- * Developed for Breborn.cl
+ * BEAR & ROOTS • MEN'S GROOMING STUDIO
+ * Interactive Booking Logic & WhatsApp Integration
+ * Developed for Breborn.cl Showcase
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initTabs();
   initBookingForm();
+  initServiceSelectors();
   initMobileMenu();
-  initOpeningStatus();
-  initCardBookButtons();
 });
 
-// Número de demostración para el showcase (reemplazable por el cliente)
-const SALON_WHATSAPP = "56986546546";
+// Número de demostración comercial para el showcase de Breborn
+const WHATSAPP_PHONE = '56986546546';
 
-/* ================= CONTROLADOR DE PESTAÑAS (TABS) ================= */
-function initTabs() {
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const targetTab = btn.getAttribute('data-tab');
-
-      tabBtns.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.remove('active'));
-
-      btn.classList.add('active');
-      const activeContent = document.getElementById(`tab-${targetTab}`);
-      if (activeContent) {
-        activeContent.classList.add('active');
-      }
-    });
-  });
-}
-
-/* ================= BOTONES "AGENDAR ESTE SERVICIO" DE CADA TARJETA ================= */
-function initCardBookButtons() {
-  const cardButtons = document.querySelectorAll('.btn-card-book');
-  const serviceSelect = document.getElementById('bookService');
-  const bookingSection = document.getElementById('agendamiento');
-
-  cardButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const serviceName = btn.getAttribute('data-service');
-      if (serviceSelect && serviceName) {
-        // Find matching option or add
-        let found = false;
-        for (let opt of serviceSelect.options) {
-          if (opt.value.includes(serviceName) || serviceName.includes(opt.value)) {
-            opt.selected = true;
-            found = true;
-            break;
-          }
-        }
-        if (!found) {
-          const newOpt = new Option(serviceName, serviceName, true, true);
-          serviceSelect.add(newOpt);
-        }
-      }
-
-      // Smooth scroll to form
-      if (bookingSection) {
-        bookingSection.scrollIntoView({ behavior: 'smooth' });
-        // Highlight form card
-        const formCard = document.querySelector('.booking-card');
-        if (formCard) {
-          formCard.style.transition = 'all 0.4s ease';
-          formCard.style.boxShadow = '0 0 30px rgba(212, 175, 55, 0.6)';
-          setTimeout(() => {
-            formCard.style.boxShadow = '';
-          }, 2000);
-        }
-      }
-    });
-  });
-}
-
-/* ================= FORMULARIO & GENERADOR DE WHATSAPP ================= */
+/**
+ * Inicialización y configuración del formulario de agendamiento
+ */
 function initBookingForm() {
-  const form = document.getElementById('bookingForm');
-  const dateInput = document.getElementById('bookDate');
+  const form = document.getElementById('bearBookingForm');
+  const dateInput = document.getElementById('fDate');
 
-  // Set minimum date to today
   if (dateInput) {
     const today = new Date();
     const yyyy = today.getFullYear();
@@ -91,7 +27,7 @@ function initBookingForm() {
     const dd = String(today.getDate()).padStart(2, '0');
     dateInput.min = `${yyyy}-${mm}-${dd}`;
 
-    // Default to tomorrow or today
+    // Fecha sugerida: Mañana
     const tomorrow = new Date();
     tomorrow.setDate(today.getDate() + 1);
     const tdd = String(tomorrow.getDate()).padStart(2, '0');
@@ -103,80 +39,110 @@ function initBookingForm() {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const service = document.getElementById('bookService').value;
-      const specialist = document.getElementById('bookSpecialist').value;
-      const dateVal = document.getElementById('bookDate').value;
-      const timeVal = document.getElementById('bookTime').value;
-      const location = document.getElementById('bookLocation').value;
+      const service = document.getElementById('fService')?.value || 'Corte de Autor';
+      const location = document.getElementById('fLocation')?.value || 'Viña del Mar';
+      const barber = document.getElementById('fBarber')?.value || 'Primer disponible';
+      const date = document.getElementById('fDate')?.value || '';
+      const time = document.getElementById('fTime')?.value || 'Tarde';
 
-      // Format date in Spanish (e.g. "Viernes 5 de Noviembre")
-      let dateFormatted = dateVal;
-      try {
-        const parts = dateVal.split('-');
-        if (parts.length === 3) {
-          const dObj = new Date(parts[0], parts[1] - 1, parts[2]);
-          dateFormatted = dObj.toLocaleDateString('es-CL', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          });
-        }
-      } catch (err) {}
+      // Construcción del mensaje pre-estructurado para WhatsApp
+      const lines = [
+        '¡Hola Bear & Roots! 👋 Quiero agendar mi hora:',
+        '',
+        `✂️ *Servicio:* ${service}`,
+        `📍 *Sucursal:* ${location}`,
+        `💈 *Barbero preferido:* ${barber}`,
+        `📅 *Fecha solicitada:* ${date}`,
+        `🕒 *Rango horario:* ${time}`,
+        '',
+        '¿Tienen disponibilidad en ese bloque? ¡Muchas gracias!'
+      ];
 
-      // Craft polished, high-converting WhatsApp message
-      const message = 
-`¡Hola Aura & Barba! 👋
+      const fullMessage = lines.join('\n');
+      const waUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(fullMessage)}`;
 
-Me gustaría agendar una hora para atención:
-💈 *Servicio:* ${service}
-✂️ *Especialista:* ${specialist}
-📅 *Fecha estimada:* ${dateFormatted}
-🕒 *Horario:* ${timeVal}
-📍 *Sucursal:* ${location}
-
-¿Tienen disponibilidad en este horario para confirmar mi reserva? ¡Muchas gracias!`;
-
-      const waUrl = `https://wa.me/${SALON_WHATSAPP}?text=${encodeURIComponent(message)}`;
+      // Abrir WhatsApp en pestaña nueva
       window.open(waUrl, '_blank');
     });
   }
 }
 
-/* ================= MENÚ MÓVIL TOGGLE ================= */
-function initMobileMenu() {
-  const toggle = document.getElementById('mobileToggle');
-  const menu = document.getElementById('mobileMenu');
-  const links = document.querySelectorAll('.mobile-link');
+/**
+ * Conexión de las tarjetas de servicios con el selector del formulario
+ */
+function initServiceSelectors() {
+  const serviceCards = document.querySelectorAll('.icon-service-card');
+  const serviceSelect = document.getElementById('fService');
+  const bookingSection = document.getElementById('agendamiento');
+  const bookingBox = document.querySelector('.booking-box');
 
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
+  serviceCards.forEach((card) => {
+    const selectBtn = card.querySelector('.btn-select-service');
+    const targetService = card.getAttribute('data-service-target');
 
-    links.forEach(l => {
-      l.addEventListener('click', () => {
-        menu.classList.remove('active');
-      });
+    const handleSelect = (e) => {
+      e.stopPropagation();
+
+      if (serviceSelect && targetService) {
+        let matched = false;
+        for (let i = 0; i < serviceSelect.options.length; i++) {
+          const optVal = serviceSelect.options[i].value;
+          if (optVal.includes(targetService) || targetService.includes(optVal)) {
+            serviceSelect.selectedIndex = i;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) {
+          const newOpt = new Option(targetService, targetService, true, true);
+          serviceSelect.add(newOpt);
+        }
+      }
+
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: 'smooth' });
+
+        if (bookingBox) {
+          bookingBox.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+          bookingBox.style.borderColor = '#f3b164';
+          bookingBox.style.boxShadow = '0 0 45px rgba(243, 177, 100, 0.65)';
+          setTimeout(() => {
+            bookingBox.style.boxShadow = '';
+            bookingBox.style.borderColor = '';
+          }, 1800);
+        }
+      }
+    };
+
+    if (selectBtn) {
+      selectBtn.addEventListener('click', handleSelect);
+    }
+    card.addEventListener('click', (e) => {
+      // Si el click no fue en el botón, también activarlo
+      if (e.target !== selectBtn) {
+        handleSelect(e);
+      }
     });
-  }
+  });
 }
 
-/* ================= ESTADO DE APERTURA EN VIVO ================= */
-function initOpeningStatus() {
-  const statusText = document.getElementById('statusText');
-  if (!statusText) return;
+/**
+ * Menú móvil responsive
+ */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobileToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileLinks = document.querySelectorAll('.m-link');
 
-  const now = new Date();
-  const day = now.getDay(); // 0 is Sunday
-  const hour = now.getHours();
+  if (toggleBtn && mobileNav) {
+    toggleBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
 
-  if (day === 0) {
-    // Sunday
-    statusText.textContent = "Cerrado hoy Domingo • Recibiendo citas por WhatsApp para mañana Lunes";
-  } else if (hour >= 10 && hour < 20) {
-    statusText.textContent = "Abierto Ahora • Recibiendo citas por WhatsApp con confirmación inmediata";
-  } else {
-    statusText.textContent = "Cerrado en este momento • Agenda ahora por WhatsApp para abrir mañana a las 10:00";
+    mobileLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+      });
+    });
   }
 }
