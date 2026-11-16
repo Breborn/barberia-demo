@@ -1,7 +1,7 @@
 # 🧸 BEAR & ROOTS • Men's Grooming Studio
-> **Showcase Comercial Inspirado en [Bear MenStudio](https://bear-menstudio.cl/) — Desarrollado por [Breborn.cl](https://breborn.cl)**
+> **Showcase Comercial Inspirado en [Barbería de Autor](https://bear-menstudio.cl/) — Desarrollado por [Breborn.cl](https://breborn.cl)**
 
-Sitio web demostrativo de alta gama y conversión para **barberías y estudios masculinos de autor** en la V Región (Viña del Mar y Valparaíso). Combina la prestigiosa dirección de arte y propuesta de valor de **Bear MenStudio** con el sistema interactivo de agendamiento directo a WhatsApp de **Breborn.cl**.
+Sitio web demostrativo de alta gama y conversión para **barberías y estudios masculinos de autor** en la V Región (Viña del Mar y Valparaíso). Combina la prestigiosa dirección de arte y propuesta de valor de **Barbería de Autor** con el sistema interactivo de agendamiento directo a WhatsApp de **Breborn.cl**.
 
 ---
 
@@ -11,7 +11,7 @@ Sitio web demostrativo de alta gama y conversión para **barberías y estudios m
 
 ---
 
-## 🌟 Elementos y Estilo Inspirados en Bear MenStudio
+## 🌟 Elementos y Estilo Inspirados en Barbería de Autor
 
 1. **🎨 Identidad Visual & Paleta Cromática:**
    - Tono ámbar cálido característico (`#f3b164` / `#e59b4c`) contrastado con fondo grafito mate (`#121316` / `#191b21`).
@@ -54,7 +54,7 @@ Sitio web demostrativo de alta gama y conversión para **barberías y estudios m
 Cuando contactes a dueños de peluquerías o barberías de Viña y Valparaíso:
 
 1. **Mensaje de contacto:**
-   > *"¡Hola [Nombre]! Estuve viendo tu local en Viña/Valpo. Te preparé una propuesta visual inspirada en marcas líderes como Bear MenStudio, pero adaptada con agendamiento directo a WhatsApp y catálogo para tus clientes: https://breborn.github.io/barberia-demo/ ¿Te gustaría que la adaptemos con tu logo y servicios esta semana?"*
+   > *"¡Hola [Nombre]! Estuve viendo tu local en Viña/Valpo. Te preparé una propuesta visual inspirada en marcas líderes como Barbería de Autor, pero adaptada con agendamiento directo a WhatsApp y catálogo para tus clientes: https://breborn.github.io/barberia-demo/ ¿Te gustaría que la adaptemos con tu logo y servicios esta semana?"*
 2. **Impacto:** El dueño ve un sitio 100% fluido en su smartphone, que resuelve la fricción de agendar citas y le da una imagen corporativa que justifica cobrar tarifas premium.
 
 ---
