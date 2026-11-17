@@ -1,5 +1,5 @@
 /**
- * BEAR & ROOTS • MEN'S GROOMING STUDIO
+ * BARBERÍA • MEN'S GROOMING STUDIO
  * Interactive Booking Logic & WhatsApp Integration
  * Developed for Breborn.cl Showcase
  */
@@ -47,7 +47,7 @@ function initBookingForm() {
 
       // Construcción del mensaje pre-estructurado para WhatsApp
       const lines = [
-        '¡Hola Bear & Roots! 👋 Quiero agendar mi hora:',
+        '¡Hola! 👋 Quiero agendar mi hora en la Barbería:',
         '',
         `✂️ *Servicio:* ${service}`,
         `📍 *Sucursal:* ${location}`,

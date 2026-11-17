@@ -1,4 +1,4 @@
-# 🧸 BEAR & ROOTS • Men's Grooming Studio
+# 🧸 BARBERÍA • Men's Grooming Studio
 > **Showcase Comercial Inspirado en [Barbería de Autor](https://bear-menstudio.cl/) — Desarrollado por [Breborn.cl](https://breborn.cl)**
 
 Sitio web demostrativo de alta gama y conversión para **barberías y estudios masculinos de autor** en la V Región (Viña del Mar y Valparaíso). Combina la prestigiosa dirección de arte y propuesta de valor de **Barbería de Autor** con el sistema interactivo de agendamiento directo a WhatsApp de **Breborn.cl**.
